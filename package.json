@@ -1,6 +1,6 @@
 {
-  "name": "ueno-gatsby-starter",
-  "description": "Opinionated Gatsby starter by Ueno",
+  "name": "Modfive",
+  "description": "Data Made Personal",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
@@ -26,7 +26,8 @@
     "clean": "rimraf .cache public",
     "lint": "npm run tslint && npm run stylelint",
     "tslint": "tslint --fix 'src/**/*.{ts,tsx}' -p .",
-    "stylelint": "stylelint 'src/**/*.scss' --syntax scss"
+    "stylelint": "stylelint 'src/**/*.scss' --syntax scss",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "2.1.23",
