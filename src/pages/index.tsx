@@ -1,29 +1,28 @@
-import * as React from 'react';
-import Helmet from 'react-helmet';
+import * as React from "react";
+import Helmet from "react-helmet";
 
-import { Intro } from 'components/intro/Intro';
-import { Highlight } from 'components/intro/Highlight';
-import { BlockText } from 'components/block-text/BlockText';
+import { Intro } from "components/intro/Intro";
+import { Highlight } from "components/intro/Highlight";
+import { BlockText } from "components/block-text/BlockText";
 
 export default () => (
   <>
     <Helmet title="Home" />
 
     <Intro>
-      Opinionated starter by Ueno, using opinionated dependencies 🤪, <Highlight>TypeScript</Highlight>,&nbsp;
-      <Highlight>SCSS</Highlight>, <Highlight>CSS Modules</Highlight>, <Highlight>React Hooks</Highlight>,&nbsp;
-      <Highlight>root resolver</Highlight>, <Highlight>code splitting</Highlight> and a lot of love.
+      We make your data personal. Using key metrics and a thoughtful design
+      process, <Highlight>Modfive</Highlight> produces visual results to help
+      bring clarity to your business needs 🤪.
     </Intro>
 
     <BlockText
       heading="Who we are"
-      description={(
+      description={
         <>
-          Ueno is a full-service agency, busy designing and building
-          beautiful digital products, brands, and experiences. For more
-          informations go to <a href="https://ueno.co" target="_blank" rel="noopener noreferrer">ueno.co</a>.
+          Modfive is a full-service data + design agency, busy making data
+          beautiful and simplified for small business across the US.
         </>
-      )}
+      }
     />
   </>
 );
